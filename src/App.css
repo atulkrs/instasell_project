@@ -1,0 +1,119 @@
+/* App.css */
+
+/* Your existing styles */
+
+/* Styles for Icon Forms */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  width: 100vw;
+  min-height: 100vh;
+  background: #ced8ff;
+}
+.navbar {
+  padding-right: 20px;
+}
+.icon-form {
+  margin-bottom: 0px;
+}
+
+.icon-form .position-relative {
+  display: flex;
+  align-items: center;
+}
+.navbar-nav.ml-auto {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav.ml-auto .icon-form {
+  margin-left: 10px; /* Adjust margin between the forms */
+}
+
+.icon-form .icon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #000;
+}
+
+/* Additional styling for the input fields and underline */
+.search-control,
+.account-control,
+.settings-control {
+  width: 150px; /* Set the width based on your design */
+  padding: 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc; /* Set border color as needed */
+  border-radius: 4px;/* Adjust margin as needed */
+}
+
+.underline-placeholder {
+  .underline-placeholder {
+    position: absolute;
+    bottom: calc(50% - 0.25px); /* Adjust to position the line closer to the text */
+    left: 50%; /* Position it in the middle horizontally */
+    width: calc(50% - 8px); /* Adjust the width to make it smaller and position it on the right side */
+    height: 0.5px; /* Adjust the height as needed (make it smaller) */
+    background-color: #000; /* Adjust the color as needed */
+    transform: translateX(-50%) translateY(50%); /* Center the line vertically and horizontally */
+    pointer-events: none;
+ 
+}
+}
+
+/* Move forms to the right side */
+@media (min-width: 576px) {
+  .icon-form {
+    margin-bottom: 0; /* Remove margin bottom for horizontal alignment */
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav li {
+    margin-right: 10px; /* Adjust margin between navigation items */
+  }
+
+  .justify-content-end {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+    float: right;
+  }
+  .integration-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Align images to the center horizontally */
+  }
+  
+  
+}
