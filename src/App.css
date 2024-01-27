@@ -114,6 +114,19 @@
     flex-direction: column;
     align-items: center;  /* Align images to the center horizontally */
   }
-  
+
+  .color-picker-wrapper {
+    overflow: hidden;
+  }
+  .coloe-picker-container{
+    position: relative;
+  }
+  .coloe-picker-dropdown{
+    position: absolute;
+    top: 100%; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    z-index: 1; 
+  }
   
 }
